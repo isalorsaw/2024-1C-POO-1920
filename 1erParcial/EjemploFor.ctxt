@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=EjemploFor
+comment0.text=\r\n\ \ \ Ingrese\ 5\ numeros\ y\ mostrar\ cuantos\ fueron\ negativos,\ positivos\ y\ ceros.\r\n\ \ \ Utilizando\ el\ Ciclo\ For\ (Para)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
