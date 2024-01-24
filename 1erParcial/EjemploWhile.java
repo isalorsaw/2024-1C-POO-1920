@@ -2,14 +2,42 @@
    Ingrese 5 numeros y mostrar cuantos fueron negativos, positivos y ceros.
    Utilizando el Ciclo While (Mientras)
    */
+  import javax.swing.JOptionPane;
   public class EjemploWhile
   {
       public static void main(String args[])
       {
-            int i=0;
-            while(i<5)
+          int numero=0,neg=0,pos=0,cero=0;
+          //int numero=0;//Variable del numero a ingresar
+          //int neg=0;//contadores
+          //int pos=0;//contadores
+          //int cero=0;//contadores
+          
+            int i=0;//Desde donde comienzo
+            while(i<5)//Hasta donde voy a llegar
             {
-                i++;
+                String entrada=JOptionPane.showInputDialog("Ingrese un Numero");
+                numero=Integer.parseInt(entrada);
+          
+                  if(numero==0)//Comparar Dos Iguales y para Inicializar 1 igual.
+                  {
+                      cero=cero+1;
+                      //cero++;
+                  }
+                  else if(numero>0)
+                  {
+                      pos=pos+1;
+                      //pos++;
+                  }
+                  else
+                  {
+                      neg=neg+1;
+                      //neg++;
+                  }
+                i++;//Como voy a avanzar
             }
+          String salida="Positivos "+pos+" Negativos "+neg+" Neutros "+cero;
+          JOptionPane.showMessageDialog(null,salida);
+            /**/
       }
   }
