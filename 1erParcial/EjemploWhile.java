@@ -35,6 +35,7 @@
                       //neg++;
                   }
                 i++;//Como voy a avanzar
+                //i=i+1;
             }
           String salida="Positivos "+pos+" Negativos "+neg+" Neutros "+cero;
           JOptionPane.showMessageDialog(null,salida);
