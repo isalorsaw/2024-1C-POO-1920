@@ -16,8 +16,10 @@
             int i=0;//Desde donde comienzo
             while(i<5)//Hasta donde voy a llegar
             {
-                String entrada=JOptionPane.showInputDialog("Ingrese un Numero");
-                numero=Integer.parseInt(entrada);
+                //String entrada=JOptionPane.showInputDialog("Ingrese un Numero");
+                //numero=Integer.parseInt(entrada);
+                
+                numero=Integer.parseInt(JOptionPane.showInputDialog("Ingrese un Numero"));
           
                   if(numero==0)//Comparar Dos Iguales y para Inicializar 1 igual.
                   {
