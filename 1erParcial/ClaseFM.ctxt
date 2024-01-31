@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ClaseFM
+comment1.params=msg
+comment1.target=double\ pedirDecimal(java.lang.String)
+comment2.params=n\ m
+comment2.target=int\ valorAbsoluto(int,\ int)
+comment3.params=msg
+comment3.target=java.lang.String\ pedirCadena(java.lang.String)
+comment4.params=msg
+comment4.target=void\ mensaje(java.lang.String)
+comment5.params=msg
+comment5.target=int\ pedirEntero(java.lang.String)
+numComments=6
