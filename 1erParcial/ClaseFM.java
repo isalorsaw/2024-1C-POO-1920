@@ -1,6 +1,43 @@
 import javax.swing.JOptionPane;
 public class ClaseFM
 {
+    //Metodo que llena un arreglo pidiendoselo al usuario
+    public static void llenarArreglo(int a[])
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            int p=i+1;
+            a[i]=pedirEntero("Ingrese el Numero #"+p);
+        }
+    }
+    //Funcion que recibe un arreglo y lo retorna en una Cadena
+    public static String imprimir(int a[])
+    {
+        String salida="Informacion del Arreglo\n";
+        int i=0;
+        while(i<a.length)
+        {
+            salida+=a[i]+" ";//Cada valor del arreglo se concatena en la cadena Salida
+            //salida=salida+a[i]+" ";
+            //salida=a[i]+" ";
+            i++;
+        }
+        return salida;
+    }
+    //Metodo que recibe un arreglo y lo retorna en una Cadena
+    public static void print(int a[])
+    {
+        String salida="Informacion del Arreglo\n";
+        int i=0;
+        while(i<a.length)
+        {
+            salida+=a[i]+" ";//Cada valor del arreglo se concatena en la cadena Salida
+            //salida=salida+a[i]+" ";
+            //salida=a[i]+" ";
+            i++;
+        }
+        mensaje(salida);
+    }
     //Funcion que pida un decimal y lo valide
     public static double pedirDecimal(String msg)
     {
