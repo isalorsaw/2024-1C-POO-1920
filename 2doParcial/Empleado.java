@@ -15,6 +15,13 @@ public class Empleado
         puesto="";
         direccion="";
     }
+    public Empleado(String cedula)
+    {
+        this.cedula=cedula;
+        nombre=ClaseFM.pedirCadena("Ingrese el Nombre");
+        puesto=ClaseFM.pedirCadena("Ingrese el Puesto");
+        direccion=ClaseFM.pedirCadena("Ingrese la Direccion");
+    }
     public Empleado(String cedula, String nombre, String puesto, String direccion)
     {
         this.cedula=cedula;
@@ -54,11 +61,11 @@ public class Empleado
     //Funciones Get
     public String getCedula()
     {
-        return this.cedula;
+        return cedula;
     }
     public String getNombre()
     {
-        return this.nombre;
+        return nombre;
     }
     public String getPuesto()
     {
@@ -84,8 +91,8 @@ public class Empleado
     //Funcion ToString
     public String toString()
     {
-        String cadena="Cedula "+cedula+"\nNombre "+nombre+"\nPuesto: "+
-        puesto+"\nDireccion "+direccion+"\nEdad "+edad;
+        String cadena="Cedula "+cedula+" Nombre "+nombre+" Puesto: "+
+        puesto+" Direccion "+direccion+" Edad "+edad;
         return cadena;
     }
 }
