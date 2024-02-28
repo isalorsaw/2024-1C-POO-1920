@@ -1,33 +1,26 @@
-
-/**
- * Write a description of class Yate here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Yate
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+public class Yate extends Coordenada
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Yate
-     */
+    Image imagen;
+    ImageIcon icono;
     public Yate()
     {
-        // initialise instance variables
-        x = 0;
+        
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public Yate(String ruta, int x, int y)
     {
-        // put your code here
-        return x + y;
+        super(x,y);
+        this.icono=new ImageIcon(getClass().getResource(ruta));
+        this.imagen=icono.getImage();
+    }
+    public void dibuja(Graphics g)
+    {
+         g.drawImage(imagen,this.x,this.y,null);
+    }
+    public String toString()
+    {
+        return super.toString();
     }
 }

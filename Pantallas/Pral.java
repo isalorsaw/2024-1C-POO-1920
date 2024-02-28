@@ -4,7 +4,7 @@ public class Pral extends JFrame
 {
     //Variables Globales
     Escenario e;
-    Dimension dim;
+    Dimension dim;//Captura parametros de pantalla
     public Pral()
     {
         super("Mi Titulo");//Llamar al Constructor de Frame y enviarle el titulo
@@ -12,14 +12,11 @@ public class Pral extends JFrame
         e=new Escenario();
         add(e);
         
-        setSize(500,300);//Tamano Alto y Ancho del Frame (pixels)
-        
+        setSize(1000,562);//Tamano Alto y Ancho del Frame (pixels)
         
         //dim=super.getToolkit().getScreenSize();
         //super.setSize(dim);
         
-        
-    
         setLocationRelativeTo(null);//Centrar el Frame con el Monitor
         //setVisible(false);//Mostrar el Frame.
     }
