@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Fondo
+comment1.params=
+comment1.target=Fondo()
+comment2.params=ruta\ x\ y
+comment2.target=Fondo(java.lang.String,\ int,\ int)
+comment3.params=g
+comment3.target=void\ dibuja(java.awt.Graphics)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
