@@ -1,17 +1,17 @@
 #BlueJ package file
-dependency1.from=Pral
-dependency1.to=Escenario
+dependency1.from=Escenario
+dependency1.to=Fondo
 dependency1.type=UsesDependency
 dependency2.from=Escenario
-dependency2.to=Fondo
+dependency2.to=Yate
 dependency2.type=UsesDependency
-dependency3.from=Escenario
-dependency3.to=Yate
+dependency3.from=Pral
+dependency3.to=Escenario
 dependency3.type=UsesDependency
-editor.fx.0.height=744
-editor.fx.0.width=1382
-editor.fx.0.x=-8
-editor.fx.0.y=-8
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 objectbench.height=111
 objectbench.width=1334
 package.divider.horizontal=0.6
