@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Piedra
+comment1.params=
+comment1.target=Piedra()
+comment2.params=ruta\ x\ y
+comment2.target=Piedra(java.lang.String,\ int,\ int)
+comment3.params=
+comment3.target=void\ setRectangle()
+comment4.params=
+comment4.target=void\ desaparecer()
+comment5.params=g
+comment5.target=void\ dibuja(java.awt.Graphics)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

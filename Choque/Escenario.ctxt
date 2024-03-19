@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Escenario
+comment1.params=
+comment1.target=Escenario()
+comment2.params=evt
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.text=public\ void\ imprimirYates()\r\n\ \ \ \ {System.out.println("++++++++++++++++++++++++++++++++\\n");\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<y.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(i+"\ "+y[i].toString());\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ inicializarYates()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<y.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ xx\=ClaseFM.generaAleatorio(10,900);\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ yy\=ClaseFM.generaAleatorio(400,480);\r\n\ \ \ \ \ \ \ \ \ \ \ \ y[i]\=new\ Yate("imagenes/lancha.png",xx,yy);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ dibujarYates(Graphics\ g)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for(int\ i\=0;i<y.length;i++)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ y[i].dibuja(g);\r\n\ \ \ \ \ \ \ \ }\r\n}
+comment3.params=evt
+comment3.target=void\ keyTyped(java.awt.event.KeyEvent)
+comment4.params=evt
+comment4.target=void\ keyPressed(java.awt.event.KeyEvent)
+comment5.params=evt
+comment5.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment6.params=evt
+comment6.target=void\ eventoTeclas(java.awt.event.KeyEvent)
+comment7.params=g
+comment7.target=void\ paint(java.awt.Graphics)
+numComments=8
