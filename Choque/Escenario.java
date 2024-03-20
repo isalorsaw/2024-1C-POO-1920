@@ -6,14 +6,17 @@ import java.awt.event.KeyListener;//Libreria para evento de teclado
 import java.awt.event.KeyEvent;//Libreria para utilizar variable de evento del teclado
 import java.awt.event.ActionListener;//Libreria para eventos de click o timer
 import java.awt.event.ActionEvent;//Libreria para utilizar variabla de evento de click o timer
+import java.io.File;
 public class Escenario extends JPanel implements KeyListener,ActionListener
 {
     Fondo f;
     Lancha l;
     Piedra p;
     Timer t;
+    int seg;
     int aleatorio;
     int segundos;
+    MP3Player mp3Player;
     public Escenario()
     {
         f=new Fondo("fondo2.png",0,0);
@@ -27,6 +30,7 @@ public class Escenario extends JPanel implements KeyListener,ActionListener
         //aleatorio=ClaseFM.generaAleatorio(1,2);
         //JOptionPane.showMessageDialog(null,aleatorio+"");
         segundos=0;
+        seg=0;
         t=new Timer(50,null);//Cada 5 milisegundos se va a ejectuar el actionPerformed
         t.start();
         t.addActionListener(this);//Agregando en el JPanel el evento de accion del click o timer
@@ -72,6 +76,7 @@ public class Escenario extends JPanel implements KeyListener,ActionListener
             if(choq==false)
             {
                 l.mover();//Mover la lancha si no hay choque o sea frenar
+                seg=segundos;
             }
             
             if(choq==true)
@@ -79,6 +84,10 @@ public class Escenario extends JPanel implements KeyListener,ActionListener
                 //l.desaparecer();
                 //p.desaparecer();
                 l.setImagen("explosion.gif");
+                play("explosion.mp3");
+                
+                int s=segundos-seg;
+                if(s>=2)stop();
             }
             
             //Frenar la lancha X
@@ -139,5 +148,26 @@ public class Escenario extends JPanel implements KeyListener,ActionListener
         f.dibuja(g);
         l.dibuja(g);
         p.dibuja(g);
+    }
+    public void stop()
+    {
+         mp3Player.close();
+    }
+    public void play(String ruta)
+    {
+          File file=new File(ruta);
+        //String ruta=file.getAbsolutePath();
+        //System.out.println(ruta);
+        
+        //String filename = "mariobros.mp3";//Inicializamos la Ruta
+        mp3Player = new MP3Player(ruta);//Inicializamos MP3Player
+        mp3Player.play();//Reproducimos
+
+       /* Scanner sc = new Scanner(System.in);
+        System.out.println("Write stop to stop the music: ");
+
+        if (sc.nextLine().equalsIgnoreCase("stop")) {
+            mp3Player.close();
+        }/**/
     }
 }
